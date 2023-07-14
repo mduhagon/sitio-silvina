@@ -19,9 +19,9 @@ copyright = "&copy;2023 Silvina Duhagon"
 
   # Metadata for search engines and social sharing
   author = "Silvina Duhagon"
-  description = "Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content."
-  shareImage = "images/social.jpg"
-  twitterHandle = "onepagelove"
+  description = "Silvina Duhagon - Yoga"
+  shareImage = "images/share.png"
+  twitterHandle = ""
 
   # Favicon
   favicon = "favicon.ico"
