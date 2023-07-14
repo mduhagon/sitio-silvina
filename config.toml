@@ -1,7 +1,7 @@
 # Site settings
 baseURL = "https://example.com"
 languageCode = "en-US"
-title = "Split - HTML Template Demo"
+title = "Silvina Duhagon - Yoga"
 theme = "hugo-split-theme"
 disableKinds = ["section", "taxonomy", "taxonomyTerm", "RSS", "sitemap"]
 
