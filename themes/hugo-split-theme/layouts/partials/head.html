@@ -32,7 +32,11 @@
 {{ if .Site.Params.visual.image.enable }}
   <style>
   {{ if .Site.Params.visual.image.file }}
-    .fs-split .split-image { background-image: url("{{ .Site.Params.visual.image.file | absURL }}"); background-position: {{ if .Site.Params.visual.image.position }}{{ .Site.Params.visual.image.position }}{{ else }}center center{{ end }}; }
+    .fs-split .split-image { 
+      background-image: url("{{ .Site.Params.visual.image.file | absURL }}"); 
+      background-position: {{ if .Site.Params.visual.image.position }}{{ .Site.Params.visual.image.position }}{{ else }}center center{{ end }}; 
+      transition: background 0.5s ease-in-out;
+    }
   {{ end }}
   </style>
 {{ end }}
@@ -41,3 +45,24 @@
 {{ if and (.Site.GoogleAnalytics) (not (in (printf "%#v" .Site.BaseURL) "localhost")) }}
   {{ template "_internal/google_analytics.html" . }}
 {{ end }}
+
+<!-- Rotate split image -->
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+  const images = [ {{ .Site.Params.visual.image.moreFiles| safeJS }} ]; // Replace with your image URLs
+  const div = document.getElementById('split-image');
+  let index = 0;
+
+  function changeBackground() {
+    div.style.opacity = '20';
+
+    setTimeout(function() {
+      div.style.backgroundImage = `url('${images[index]}')`;
+      div.style.opacity = '1';
+      index = (index + 1) % images.length;
+    }, 50);
+  }
+
+  setInterval(changeBackground, 10000); 
+});
+</script>
