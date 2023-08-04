@@ -15,9 +15,10 @@ Bonjour à tous ! Je suis ravie de vous accueillir sur mon site en tant que prof
 ## Tarifs & Horaires
 
 - Cours collectifs en petits groupes. Veuillez me contacter pour les horaires de cours actuels
-- Cours au mois 45 euros
-- Carte de 10 séances d'une validité de trois mois 110 euros
-- Cours a l'unité 12 euros
+- Cours au mois 45 euros TTC
+- Tarif réduit (sans emploi, étudiants, précaire) 35 euros TTC
+- Carte de 10 séances d'une validité de trois mois 110 euros TTC
+- Cours a l'unité 12 euros TTC
 - Premier Cours d’Essai est Gratuit, sauf cours particuliers
 
 ## Contact
